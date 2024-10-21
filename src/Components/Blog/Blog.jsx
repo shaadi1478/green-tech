@@ -19,14 +19,14 @@ const Blog = () => {
     return (
         <div className='bg-[#F9FCF8]'>
             <div>
-                <h1 className='text-4xl mb-8 ml-72'>Discover latest news and articles
+                <h1 className='text-4xl mb-8 md:ml-72'>Discover latest news and articles
                 </h1>
             </div>
-            <div className='justify-center items-center mb-11 px-44'>
+            <div className='justify-center items-center md:mb-11 mb-4 md:px-44'>
                 <img src={heart} alt="" className=' w-full rounded-lg' />
             </div>
-            <div className='px-44 grid grid-cols-3 gap-y-5'>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+            <div className='md:px-44 grid md:grid-cols-3 grid-cols-1 gap-y-5'>
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic1}
@@ -40,7 +40,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic2}
@@ -54,7 +54,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic3}
@@ -68,7 +68,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic4}
@@ -82,7 +82,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic5}
@@ -96,7 +96,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic6}
@@ -110,7 +110,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic7}
@@ -124,7 +124,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic8}
@@ -138,7 +138,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic9}
@@ -152,7 +152,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic10}
@@ -166,7 +166,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic11}
@@ -180,7 +180,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic12}
@@ -194,7 +194,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic13}
@@ -208,7 +208,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic14}
@@ -222,7 +222,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96 h-[375px] shadow-xl">
+                <div className="card bg-base-100 md:w-96  h-[375px] shadow-xl">
                     <figure>
                         <img
                             src={pic15}

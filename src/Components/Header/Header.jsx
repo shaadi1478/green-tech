@@ -17,7 +17,6 @@ const Header = () => {
             <Home />
             <Sadiq />
             <IslamicSection />
-            <SmallFooter />
         </div>
     );
 };
