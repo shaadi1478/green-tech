@@ -1,24 +1,22 @@
+import { Link } from "react-router-dom";
 
 const IslamicSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-8 bg-[#FFFFFF]">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:p-8 p-1 bg-[#FFFFFF]">
       
       {/* 10+ Islamic Apps */}
       <div className="bg-white text-center p-6 border rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold mb-4">10+ Islamic apps</h2>
         <p className="text-lg mb-6">Bringing people closer to Allah</p>
-        <a href="/apps" className="text-blue-600 font-semibold">
-          Check out all apps &rarr;
-        </a>
+        <Link to='/apps' className="text-blue-600 font-semibold">   Check out all apps &rarr;</Link>
       </div>
 
       {/* Sadaqah Jariyah */}
       <div className="bg-green-300 text-center p-6 border rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold mb-4">Sadaqah Jariyah</h2>
         <p className="text-lg mb-6">Help Us Reach Muslims Worldwide</p>
-        <a href="/donate" className="text-blue-600 font-semibold">
-          Donate &rarr;
-        </a>
+        <Link to='/donate' className="text-blue-600 font-semibold">  Donate &rarr;</Link>
+        
       </div>
 
       {/* Volunteer */}

@@ -14,10 +14,10 @@ const Navbars = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Toggle search box
-    const toggleSearch = () => {
-        setSearchOpen(!searchOpen);
-    };
+    // // Toggle search box
+    // const toggleSearch = () => {
+    //     setSearchOpen(!searchOpen);
+    // };
 
     // Toggle dropdown for Organization
     const toggleOrganizationDropdown = () => {
@@ -85,7 +85,7 @@ const Navbars = () => {
 
                     {/* Search Icon */}
                     <div className="relative">
-                        <button onClick={toggleSearch} className="text-gray-700 hover:text-green-600">
+                        <button className="text-gray-700 hover:text-green-600">
                             <FaSearch className="text-xl" />
                         </button>
 
@@ -97,8 +97,7 @@ const Navbars = () => {
                             />
                         )}
                     </div>
-
-                    <a href="#donate" className="px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600">Donate</a>
+                    <Link to='/donate' className="px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600"> Donate</Link>
                 </nav>
 
                 {/* Mobile Menu */}
@@ -118,9 +117,9 @@ const Navbars = () => {
                             </button>
                             {organizationDropdown && (
                                 <div className="flex flex-col items-start bg-white shadow-md w-full px-4 py-2">
-                                    <Link onClick={closeMenu} to="/about" className="block text-gray-700 hover:text-green-600">About Us</Link>
-                                    <Link onClick={closeMenu} to="/team" className="block text-gray-700 hover:text-green-600">Our Team</Link>
-                                    <Link onClick={closeMenu} to="/mission" className="block text-gray-700 hover:text-green-600">Mission & Vision</Link>
+                                    <Link onClick={closeMenu} to="/faq" className="block px-4 py-2 text-gray-700 hover:bg-green-100">FAQ</Link>
+                                <Link onClick={closeMenu} to="/support" className="block px-4 py-2 text-gray-700 hover:bg-green-100">Customer Support</Link>
+                                <Link onClick={closeMenu} to="/contacts" className="block px-4 py-2 text-gray-700 hover:bg-green-100">Contact Us</Link>
                                 </div>
                             )}
                         </div>
@@ -142,7 +141,7 @@ const Navbars = () => {
                             )}
                         </div>
 
-                        <a href="#donate" className="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600">Donate</a>
+                       <Link to='/donate' className="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600"> Donate</Link>
                     </nav>
                 )}
             </header>
