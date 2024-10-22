@@ -1,6 +1,7 @@
 import about from '../../assets/about.svg';
 import vision from '../../assets/vision.svg';
 import mission from '../../assets/mountain.svg';
+import Achieved from '../Achieved/Achieved';
 
 const About = () => {
     return (
@@ -29,7 +30,7 @@ const About = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Vision Card */}
-                    <div className="bg-[#4F9C3A] text-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center md:items-start gap-6">
+                    <div className="bg-[#4F9C3A] text-white rounded-lg shadow-lg p-6 flex flex-col-reverse md:flex-row items-center md:items-start gap-6">
                         <div className="md:w-2/3">
                             <h2 className="text-xl lg:text-2xl font-bold mb-2">Our Vision</h2>
                             <p className="text-sm lg:text-base">To bring people closer to Allah</p>
@@ -40,7 +41,7 @@ const About = () => {
                     </div>
 
                     {/* Mission Card */}
-                    <div className="bg-[#4F9C3A] text-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center md:items-start gap-6">
+                    <div className="bg-[#4F9C3A] text-white rounded-lg shadow-lg p-6 flex flex-col-reverse md:flex-row items-center md:items-start gap-6">
                         <div className="md:w-2/3">
                             <h2 className="text-xl lg:text-2xl font-bold mb-2">Our Mission</h2>
                             <p className="text-sm lg:text-base">To help Muslims better understand Islam</p>
@@ -51,6 +52,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Achieved />
         </div>
     );
 };

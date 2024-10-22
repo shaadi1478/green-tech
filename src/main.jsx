@@ -14,6 +14,8 @@ import About from './Components/About/About';
 import Home from './Components/Home/Home';
 import OurApps from './Components/OurApps/OurApps';
 import Blog from './Components/Blog/Blog';
+import Services from './Components/Services/Services';
+import Collabarate from './Components/Collabarate/Collabarate';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About></About>
+      }, 
+      {
+        path: '/services',
+        element: <Services />
+      },
+      {
+        path: '/collabarate',
+        element: <Collabarate />
       },
       {
         path: "/contacts",
@@ -52,5 +62,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-    </StrictMode>,
+  </StrictMode>,
 )

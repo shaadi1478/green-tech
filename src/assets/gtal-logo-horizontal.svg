@@ -1,0 +1,14 @@
+<svg width="174.08mm" height="43.013mm" version="1.1" viewBox="0 0 174.08 43.013" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-23.88 -302.05)">
+  <text x="231.2699" y="-13.280153" fill="#000000" font-family="'Passero One'" font-size="17.238px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="231.2699" y="-13.280153" font-family="'Passero One'" stroke-width=".26458"/></text>
+  <text x="286.83514" y="-469.0741" fill="#1a1a1a" font-family="Oswald" font-size="19.687px" font-weight="300" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="286.83514" y="-469.0741" fill="#1a1a1a" font-family="Oswald" font-size="19.687px" font-weight="300" stroke-width=".26458"/></text>
+  <g transform="translate(-1668.5 370.8)" fill="#1a1a1a" font-family="'Roboto Slab'" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="1744.3201" y="-49.322361" font-size="25.5px" font-weight="bold" style="line-height:1.25" xml:space="preserve"><tspan x="1744.3201" y="-49.322361" fill="#1a1a1a" font-family="'Roboto Slab'" font-weight="bold" stroke-width=".26458">Greentech</tspan></text>
+   <text x="1744.309" y="-29.731909" font-size="19.687px" font-weight="300" style="line-height:1.25" xml:space="preserve"><tspan x="1744.309" y="-29.731909" fill="#1a1a1a" font-family="'Roboto Slab'" font-size="19.687px" font-weight="300" stroke-width=".26458">Apps Limited</tspan></text>
+  </g>
+  <g transform="matrix(-.81111 .81111 .81111 .81111 1104.7 118.69)" stroke-linecap="square">
+   <path d="m780.91-545.15-0.75811 4.084h7.0936v-4.084zm-4.8364 8.1674 2.7776 4.0835h16.656v-4.0835zm2.0702 8.1675-0.64698 2.0422 0.64645 2.0412h25.338v-4.0834zm0.70798 8.1669-2.7781 4.084h19.585v-4.084zm1.2997 8.1675 0.75861 4.0835h6.4534v-4.0835z" fill="#88e744" stroke-width=".087178"/>
+   <path d="m752.97-526.77 13.137-13.16 13.116-13.225-2.4502 13.192-3.4902 3.2981 2.2651 3.2981-1.2251 6.5962 1.2251 6.5962-2.2651 3.2981 3.4902 3.2981 2.4502 13.192-13.116-13.225z" fill="#3cbe59" stroke-width=".087178"/>
+  </g>
+ </g>
+</svg>
