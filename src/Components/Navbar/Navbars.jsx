@@ -98,7 +98,7 @@ const Navbars = () => {
                         )}
                     </div>
 
-                    <a href="#donate" className="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600">Donate</a>
+                    <a href="#donate" className="px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600">Donate</a>
                 </nav>
 
                 {/* Mobile Menu */}

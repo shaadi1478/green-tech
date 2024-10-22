@@ -1,0 +1,51 @@
+import React from 'react';
+import apps from '../../assets/apps.svg';
+import calendar from '../../assets/calendar.svg';
+import users from '../../assets/users.svg';
+import earth from '../../assets/earth.svg';
+
+const Achieved2 = () => {
+    return (
+        <div>
+            <div className='mt-11 mb-11'>
+                {/* Responsive Heading */}
+                <h2 className='text-3xl md:text-5xl text-[#293842]  text-center mb-10 md:mb-16'>
+                Impact of Your Support
+                </h2>
+
+                {/* Responsive Grid Layout */}
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6'>
+                    {/* Card 1 */}
+                    <div className='bg-white rounded-lg shadow-lg p-6 md:p-14 text-center'>
+                        <img src={apps} alt="Apps icon" className='mx-auto mb-4' />
+                        <h3 className='text-lg md:text-xl font-semibold'>10+ Apps</h3>
+                        <p>Islamic Applications</p>
+                    </div>
+
+                    {/* Card 2 */}
+                    <div className='bg-white rounded-lg shadow-lg p-6 md:p-14 text-center'>
+                        <img src={calendar} alt="Calendar icon" className='mx-auto mb-4' />
+                        <h3 className='text-lg md:text-xl font-semibold'>9+ Years</h3>
+                        <p>Serving Ummah</p>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className='bg-white rounded-lg shadow-lg p-6 md:p-14 text-center'>
+                        <img src={users} alt="Users icon" className='mx-auto mb-4' />
+                        <h3 className='text-lg md:text-xl font-semibold'>3.5M+ Users</h3>
+                        <p>From worldwide & growing</p>
+                    </div>
+
+                    {/* Card 4 */}
+                    <div className='bg-white rounded-lg shadow-lg p-6 md:p-14 text-center'>
+                        <img src={earth} alt="Earth icon" className='mx-auto mb-4' />
+                        <h3 className='text-lg md:text-xl font-semibold'>Multilingual</h3>
+                        <p>Supports 66 Languages</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Achieved2;

@@ -16,6 +16,7 @@ import OurApps from './Components/OurApps/OurApps';
 import Blog from './Components/Blog/Blog';
 import Services from './Components/Services/Services';
 import Collabarate from './Components/Collabarate/Collabarate';
+import Donate from './Components/Donate/Donate';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: '/blog',
         element: <Blog />
+      },
+      {
+        path: '/donate',
+        element: <Donate />
       },
       {
         path: '/about',
