@@ -17,6 +17,9 @@ import Blog from './Components/Blog/Blog';
 import Services from './Components/Services/Services';
 import Collabarate from './Components/Collabarate/Collabarate';
 import Donate from './Components/Donate/Donate';
+import FAQ from './Components/FAQ/FAQ';
+import { HelmetProvider } from 'react-helmet-async';
+import CustomerSupport from './Components/CustomerSupport/CustomerSupport';
 
 const router = createBrowserRouter([
   {
@@ -47,7 +50,7 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About></About>
-      }, 
+      },
       {
         path: '/services',
         element: <Services />
@@ -60,12 +63,22 @@ const router = createBrowserRouter([
         path: "/contacts",
         element: <Contact />,
       },
+      {
+        path: '/faq',
+        element: <FAQ />
+      },
+      {
+        path: '/customer',
+        element: <CustomerSupport />
+      }
     ],
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </StrictMode>,
 )

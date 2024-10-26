@@ -10,6 +10,7 @@ import academic from '../../assets/academy-of-quran-studies.webp';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import Attribution from '../Attribution/Attribution';
 import GetInTouch from '../GetInTouch/GetInTouch';
+import { motion } from 'framer-motion';
 
 const Partners = () => {
     return (
@@ -20,7 +21,7 @@ const Partners = () => {
                         Our <span className='text-[#4F9C3A]'>Partners</span>
                     </h1>
                     <p className='text-sm md:text-base lg:text-lg leading-relaxed'>
-                        Since our journey started in 2015, many organisations and individuals have <br /> supported our projects in various ways.
+                        Since our journey started in 2015, many organizations and individuals have <br /> supported our projects in various ways.
                         We appreciate their contributions. May Allah <br /> reward them all. We'd like to acknowledge some of them here.
                     </p>
                 </div>
@@ -37,14 +38,20 @@ const Partners = () => {
                         { img: al_huda, title: "Al Huda International", desc: "Hindi WBW translation." },
                         { img: academic, title: "Academy of Quran Studies", desc: "Arabic Verb form database." },
                     ].map((partner, index) => (
-                        <div key={index} className='bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between w-full max-w-xs'>
+                        <motion.div
+                            key={index}
+                            className='bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between w-full max-w-xs'
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.3, delay: index * 0.1 }}
+                        >
                             <img src={partner.img} alt={partner.title} className='mb-4' />
                             <div className='text-start'>
                                 <h2 className='font-semibold text-lg mb-2'>{partner.title}</h2>
                                 <p className='text-sm mb-4'>{partner.desc}</p>
                             </div>
                             <FaLongArrowAltRight className='text-[#4F9C3A] mt-auto self-end' />
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

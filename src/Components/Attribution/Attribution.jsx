@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { TbWorld } from 'react-icons/tb';
+import { motion } from 'framer-motion';
 
 const Attribution = () => {
     return (
@@ -25,16 +26,26 @@ const Attribution = () => {
                     { name: 'Bdz Brahim', icon: <TbWorld className='text-white' /> },
                     { name: 'Goran Gharib', icon: <TbWorld className='text-white' /> },
                 ].map((person, index) => (
-                    <div key={index} className='bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center space-y-3'>
-                        
+                    <motion.div
+                        key={index}
+                        className='bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center space-y-3'
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                    >
                         <h2 className='text-lg font-semibold'>{person.name}</h2>
                         <div className='bg-[#4F9C3A] p-1 rounded-md'>
                             <div className='text-xl'>{person.icon}</div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
-            <p className='md:px-36 text-center mt-11'>Many other organisations and individual brothers and sisters have also helped us <br /> by sharing feedback, preparing content, translating app UI, and reporting bugs. May <br /> Allah reward them all, Ameen.</p>
+            <motion.p  initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: 0.1 }}
+                        className='md:px-36 text-center mt-11'>
+                Many other organisations and individual brothers and sisters have also helped us <br /> by sharing feedback, preparing content, translating app UI, and reporting bugs. May <br /> Allah reward them all, Ameen.
+            </motion.p>
         </div>
     );
 };

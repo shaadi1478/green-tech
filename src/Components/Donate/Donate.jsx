@@ -1,10 +1,37 @@
 import React from 'react';
 import { FaCheck, FaHeart } from 'react-icons/fa';
 import Achieved2 from '../Achieved2/Achieved2';
+import { Helmet } from 'react-helmet-async';
+import { motion } from 'framer-motion';
 
 const Donate = () => {
+    // Slide-in animation variants
+    const slideInVariants = {
+        hidden: {
+            opacity: 0,
+            x: 50, // Start below
+        },
+        visible: {
+            opacity: 1,
+            x: 0, // Slide into position
+            transition: {
+                duration: 0.5, // Animation duration
+                type: 'spring', // Optional: change to 'tween' or 'spring' for different effects
+                stiffness: 100, // Optional: controls the spring effect
+            },
+        },
+    };
+
     return (
-        <div className='bg-[#FAFAFA] px-4 md:px-44 mt-11'>
+        <motion.div
+            className='bg-[#FAFAFA] px-4 md:px-44 py-28'
+            initial="hidden" // Initial state
+            animate="visible" // Animate to visible state
+            variants={slideInVariants} // Apply the animation variants
+        >
+            <Helmet>
+                <title>Green Tech | Donate</title>
+            </Helmet>
             <div className="bg-white p-6 rounded-lg shadow-2xl text-center">
                 <h1 className="text-2xl md:text-3xl font-bold text-[#293842] mb-2">
                     Be A Changemaker! Your Generosity Will
@@ -90,23 +117,23 @@ const Donate = () => {
                         <div className='flex items-center gap-2'><FaCheck className='text-green-600' /><p>Quarterly & Annual transparency reports</p></div>
                     </div>
                 </div>
-                <div className='mt-11 bg-white rounded-lg shadow-2xl w-[310px] h-auto'>
+                <div className='mt-11 bg-white rounded-lg shadow-2xl md:w-[310px] h-auto'>
                     <h2 className='p-2'>Questions?</h2>
-                    <div className="collapse collapse-arrow  ">
+                    <div className="collapse collapse-arrow">
                         <input type="radio" name="my-accordion-2" />
                         <div className="collapse-title text-sm font-medium">I don’t have online Card Payment options. How do I donate?</div>
                         <div className="collapse-content">
                             <p>To support from Bangladesh, you can find the details here. For other countries, please mail us at contact@gtaf.org so we can figure out a suitable way for you to contribute.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow ">
+                    <div className="collapse collapse-arrow">
                         <input type="radio" name="my-accordion-2" />
                         <div className="collapse-title text-sm font-medium">Do you accept Zakat?</div>
                         <div className="collapse-content">
                             <p>We do not accept Zakat. Islamic Sharia Council and IFAC confirm that we are not eligible for zakat. Therefore, we only accept Sadaqah.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow ">
+                    <div className="collapse collapse-arrow">
                         <input type="radio" name="my-accordion-2" />
                         <div className="collapse-title text-sm font-medium">Why should I become a monthly donor?</div>
                         <div className="collapse-content">
@@ -115,7 +142,7 @@ const Donate = () => {
                                 And you will get important quarterly and yearly updates, a chance to share direct feedback and early access to upcoming resources.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow ">
+                    <div className="collapse collapse-arrow">
                         <input type="radio" name="my-accordion-2" />
                         <div className="collapse-title text-sm font-medium">How is the donation money used?</div>
                         <div className="collapse-content">
@@ -133,7 +160,7 @@ const Donate = () => {
                                 GTAF Annual Report 2020.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow ">
+                    <div className="collapse collapse-arrow">
                         <input type="radio" name="my-accordion-2" />
                         <div className="collapse-title text-sm font-medium">I accidentally chose the monthly donation option. How can I fix it?</div>
                         <div className="collapse-content">
@@ -151,7 +178,7 @@ const Donate = () => {
                 </div>
             </div>
             <Achieved2 />
-        </div>
+        </motion.div>
     );
 };
 

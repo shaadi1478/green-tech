@@ -7,11 +7,15 @@ import HadithSection from '../HadithSection/HadithSection';
 import Sadiq from '../Sadiq/Sadiq';
 import IslamicSection from '../IslamicSection/IslamicSection';
 import SmallFooter from '../SmallFoolter/SmallFooter';
+import { Helmet } from 'react-helmet-async';
 
 const Header = () => {
 
     return (
         <div className="bg-[#F9FAFB] w-full shadow-2xl">
+            <Helmet>
+                <title>Green Tech</title>
+            </Helmet>
             {/* Header */}
             <HadithSection />
             <Home />
